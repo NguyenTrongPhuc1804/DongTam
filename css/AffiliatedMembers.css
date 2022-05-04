@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: montbold;
+    src: url("../font/FontsFree-Net-Mont-Bold.ttf");
+    /* font-weight: bold; */
+  }
+  .banner-component {
+    background-size: cover;
+    background-image: url(https://dongtam.com.vn/wp-content/themes/dongtam/assets/img/bg-banner-component.jpg);
+  }
+  .banner-component .bg-overay-about {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+  }
+  .banner-component .bg-overay-about h3 {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 178px 15px 68px;
+    font-weight: 650;
+    text-transform: uppercase;
+  }
+  
+  .breadcrumb {
+    padding: 7px;
+    background-color: #e9ecef;
+  }
+  .breadcrumb p {
+    margin: 0;
+    font-size: 17px;
+  }
+  .breadcrumb p a {
+    color: #666666;
+  }
+  
+  .ref-group {
+    background-image: url(https://dongtam.com.vn/wp-content/themes/dongtam/assets/img/bg-gioi-thieu.png);
+    padding: 60px 0 130px;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+  }
+  .ref-group .page-title-top {
+    font-size: 14px;
+    color: #ed1c24;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .ref-group .page-title-top span {
+    border-bottom: 2px solid red;
+    width: 60px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .ref-group .page-title-top .page-title-bottom {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #111;
+    padding-left: 70px ;
+    margin-top: 13px;
+  }
+  
+  .des {
+    font-size: 16px;
+    color: #666;
+    padding: 0 70px;
+  }
+  .des p {
+    margin: 30px 0;
+  }
+  
+  .zoom-in {
+    width: fit-content;
+    overflow: hidden;
+  }
+  .zoom-in img {
+    width: 100%;
+    padding-right: 30px;
+    transition: 0.35s;
+  }
+  .zoom-in img:hover {
+    transform: scale(1.1);
+  }
+  
+  .ref-history {
+    padding: 70px 0 80px;
+    background-image: url(https://dongtam.com.vn/wp-content/themes/dongtam/assets/img/bg-range-point.png);
+  }
+  .ref-history span:first-child {
+    border-bottom: 2px solid red;
+    width: 60px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .ref-history span:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .ref-history h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    padding-left: 0;
+    margin-top: 13px;
+    font-weight: 600;
+  }
+  
+  .slider-for {
+    margin-top: 52px;
+    margin-bottom: 74px;
+  }
+  
+  .slider-nav {
+    cursor: pointer;
+  }
+  .slider-nav button {
+    border: none;
+    background: #fff;
+  }
+  
+  .slider-for .w-1120 {
+    margin: auto;
+  }
+  .slider-for .w-1120 .zoom-img {
+    width: fit-content;
+    overflow: hidden;
+    float: right;
+  }
+  .slider-for .w-1120 .zoom-img img {
+    transition: 0.35s;
+  }
+  .slider-for .w-1120 .zoom-img img:hover {
+    transform: scale(1.1);
+  }
+  .slider-for .w-1120 h5 {
+    font-size: 22px;
+    color: #ed1c24;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  .slider-for .w-1120 p {
+    font-size: 15px;
+    color: #555;
+  }
+  .slider-for .w-1120 .ml-md-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .w-fit-content {
+    /* margin: auto; */
+    width: fit-content;
+    position: relative;
+  }
+  .w-fit-content .cricel {
+    width: 11px;
+    height: 11px;
+    border: 2px solid #ed1c24;
+    border-radius: 100%;
+    transition: 0.2s;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .w-fit-content .year {
+    font-family: montbold;
+    font-size: 14px;
+    color: #fff;
+    background: #dedede;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 100px;
+    margin-top: 12px;
+    transition: 0.3s;
+    margin-left: 18px;
+  }
+  
+  .slick-slide.slick-current .cricel {
+    background: #111;
+    border: none;
+  }
+  
+  .w-fit-content:hover .cricel {
+    background: #111;
+    border: none;
+  }
+  
+  .w-fit-content:hover .year {
+    background: #ed1c24;
+  }
+  
+  .slick-slide.slick-current .year {
+    background: #ed1c24;
+  }
+  
+  .slick-list.draggable {
+    padding: 0;
+    margin: 0 35px;
+  }
+  
+  .slick-arrow {
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    fill: #dedede;
+  }
+  
+  .slick-prev {
+    position: absolute;
+    top: -25px;
+    cursor: pointer;
+  }
+  
+  .slick-next {
+    right: 6px;
+    position: absolute;
+    top: -25px;
+    cursor: pointer;
+  }
+  
+  .fa-solid {
+    font-size: 50px;
+    color: #dedede;
+  }
+  
+  .slider-nav .slick-list:before {
+    content: "";
+    height: 1px;
+    background: #dedede;
+    width: calc(100% - 100px);
+    position: absolute;
+    left: 50px;
+    top: 5px;
+  }
+  
+  .page-title-item {
+    text-align: center;
+  }
+  .page-title-item .page-title-top {
+    justify-content: center;
+  }
+  .page-title-item .page-title-bottom {
+    padding: 0;
+    font-size: 40px;
+  }
+  
+  .item-ref .icon {
+    height: 90px;
+    background: #ed1c24;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90px;
+    flex: 0 0 90px;
+    margin-right: 40px;
+  }
+  
+  .dest {
+    color: #fff;
+  }
+  .dest h6 {
+    font-size: 18px;
+    font-family: montbold;
+    margin-bottom: 18px;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+  .dest p {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  
+  .ref-cultural {
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .overay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 85px 0 50px;
+  }
+  
+  .meaning-logo {
+    padding: 100px 0;
+  }
+  .meaning-logo .page-title-item p {
+    font-style: italic;
+    font-size: 18px;
+    max-width: 830px;
+    margin: 15px auto 0;
+  }
+  .meaning-logo .page-title-item p em {
+    font-size: 16px;
+    text-align: center;
+  }
+  .meaning-logo .content {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 35px;
+    align-items: center;
+  }
+  .meaning-logo .content-img {
+    max-width: 290px;
+    flex: 0 0 290px;
+  }
+  .meaning-logo .content-img img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .meaning-logo .content-text {
+    padding-left: 60px;
+  }
+  .meaning-logo .content-text p {
+    margin: 0 0 1rem 0;
+  }
+  .meaning-logo .content-text h5 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 15px;
+  }
+  .meaning-logo .content-text .list-unstyled li i {
+    font-style: normal;
+    padding: 3px 0;
+    font-size: 18px;
+  }
+  .meaning-logo .content-text .list-unstyled li .fas {
+    font-weight: 900;
+    color: #ed1c24;
+    margin-right: 10px;
+  }
+  
+  .oriented-development {
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .contentm {
+    max-width: 1140px;
+    margin: 20px auto 0;
+    font-size: 17px;
+  }
+  .contentm p {
+    margin-bottom: 30px;
+  }
+  
+  .leadership {
+    background: #f8f8f8;
+    padding: 70px 0;
+  }
+  .leadership .page-title-top {
+    font-size: 14px;
+    color: #ed1c24;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .leadership .item {
+    height: 440px !important;
+    background: #FFF;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    padding: 40px 15px;
+    position: relative;
+    height: 100%;
+  }
+  .leadership .item .border-hover {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background: #ed1c24;
+    border-radius: 100px;
+    left: 0;
+    top: -100%;
+    transform: translateY(100%);
+    z-index: 0;
+    transition: 0.2s;
+  }
+  .leadership .item .position-relative {
+    overflow: visible;
+  }
+  .leadership .item img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 100%;
+    box-shadow: 7px 0 11px rgba(0, 0, 0, 0.1);
+    transition: 0.1s;
+  }
+  .leadership .item h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 0;
+    transition: 0.2s;
+  }
+  .leadership .item p {
+    font-size: 15px;
+    margin-bottom: 0;
+    transition: 0.2s;
+  }
+  
+  .item:hover .border-hover {
+    height: 263px;
+  }
+  .item:hover img {
+    border: 2px solid #ed1c24;
+  }
+  .item:hover h5 {
+    color: #ed1c24;
+  }
+  .item:hover p {
+    color: #ed1c24;
+  }
+  
+  .leadership .slide-leadership {
+    margin-top: 38px;
+  }
+  .leadership .slide-leadership .slick-arrow {
+    height: 50px;
+    width: 50px;
+    border: 2.5px solid #555;
+    border-radius: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: -85px;
+    right: 0;
+    transition: 0.2s;
+  }
+  .leadership .slide-leadership .slick-arrow:hover {
+    border-color: #ed1c24;
+  }
+  .leadership .slide-leadership .slick-arrow:hover .fa-solid {
+    color: red;
+  }
+  .leadership .slide-leadership .slick-arrow .fa-solid {
+    width: 20px;
+    height: 20px;
+    color: #555;
+    font-size: 20px;
+  }
+  .leadership .slide-leadership .slick-prev {
+    right: 70px;
+  }
+  .leadership .slide-leadership .slick-next {
+    right: 6px;
+    position: absolute;
+  }
+  .leadership .slick-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .leadership .slick-list {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .slide-achievement {
+    padding: 70px 0;
+    background: #f8f8f8;
+  }
+  .slide-achievement .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slide-achievement img{
+    margin: 0 auto;
+    transition: 0.35s;
+  }
+  .slide-achievement img:hover {
+    transform: scale(1.1);
+  }
+  .slide-achievement .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #e0e0e0;
+  }
+  .slide-achievement .slick-arrow:hover .fa-solid {
+    color: #000;
+  }
+  .slide-achievement .slick-prev {
+    left: 5px;
+    z-index: 1;
+  }
+  .slide-achievement .fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    fill: #e0e0e0;
+    transition: 0.2s;
+  }
+  .popup-lead{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 999;
+    background: rgba(0,0,0,.8);
+    display: none;
+    transition: 3s;
+    /* opacity: 0; */
+  }
+  .content-prewiew{
+    padding: 50px 30px 30px 15px;
+  }
+  .content-prewiew h5{
+    font-size: 18px;
+      font-family:montbold;
+      text-transform: uppercase;
+      color: #ed1c24;
+      line-height: 26px;
+  }
+  .content-prewiew-info h6{
+    font-family: montbold;
+      text-transform: uppercase;
+      color: #555;
+      font-size: 1rem;
+  }
+  
+  /*# sourceMappingURL=about.css.map */
+  .content-popup-lead{
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+  }
+  .content-popup-lead img{
+    width: 100%;
+    height: 100%;
+  }
+  .close-popup{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+    top: 8px;
+    cursor: pointer;
+  }
+  .close-popup .lnr{
+    width: 100%;
+    height: 100%;
+  }
+  .popup-lead.open-lead{
+    display: block;
+    animation: Addpopup linear 0.3s;
+  }
+  @keyframes Addpopup {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.new-post-item{
+    box-shadow: 2px 0 7px rgb(0 0 0 / 15%);
+    border-radius: inherit;
+}
+.new-post-content h5{
+  transition: 0.3s;
+  color: #111 !important;
+}
+.new-post-item:hover .new-post-content h5{
+ color: #ed1c24 !important;
+}
