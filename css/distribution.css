@@ -1,0 +1,56 @@
+/* .map-header {
+  padding: 60px 0 40px;
+}
+.map-header .map-header-left {
+  width: 16.67%;
+  font-size: 18px !important;
+  font-family: montbold !important;
+  text-transform: uppercase !important;
+  font-weight: 300;
+  line-height: 35px;
+  float: left;
+}
+.map-header .map-header-right .search-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 50px;
+  flex: 0 0 50px;
+  margin-left: 15px;
+  border: none !important;
+  outline: 0 !important;
+  background-color: #ed1c24 !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px !important;
+  padding: 3px 5px !important;
+}
+.map-header .map-header-right .search-map .lnr {
+  fill: #fff !important;
+} */
+
+
+/*# sourceMappingURL=distribution.css.map */
+.name-dots{
+  color: #111;
+  font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: montbold;
+}
+.animation-dots{
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 12px #fff;
+  top: 50%;
+  left: 50%;
+  animation: dots 3s infinite;
+  position: initial!important;
+  margin: 10px auto 0!important;
+}
+@keyframes dots {
+  50%{
+    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 12px #fff, 0 0 15px #fff, 0 0 18px #fff, 0 0 21px #fff, 0 0 24px #fff, 0 0 27px #fff, 0 0 30px #fff, 0 0 33px #fff, 0 0 36px #fff, 0 0 40px #fff, 0 0 43px #fff, 0 0 46px #fff, 0 0 49px #fff;
+  }
+}
